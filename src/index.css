@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* https://coolors.co/595959-808f85-91c499-f2e9dc-cfd11a */
+
+* {
+  font-family: "Quicksand";
+  margin: 0px;
+  padding: 0px;
+  color: #cfd11a;
+  background-color: #595959;
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 40%;
+  border-bottom: 1px solid #f2e9dc;
+}
+
+h1 {
+  color: #91c499;
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 16px;
+  padding: 6px;
+}
+
+a:hover {
+  color: #91c499;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60%;
+  margin: 0px auto auto;
+}
+
+.main > * {
+  margin: 10%;
+}
+
+article {
+  padding: 10px;
+  line-height: 1.5;
+}
+
+article::first-letter {
+  font-weight: bold;
+  float: left;
+  line-height: 0.75em;
+  font-size: 3em;
+}
+
+.project-link {
+  background-color: #808f85;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+}
+
+button:hover {
+  color: #808f85;
+  background-color: #91c499;
+}
+
+.main .project-link {
+  width: 50%;
+  height: 150px;
+  border: none;
+  font-size: 50px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .project-link div {
+  background: transparent;
+}
+
+@media screen and (max-width: 1500px) {
+  .main {
+    margin: 50px auto auto;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main {
+    margin: 0px auto auto;
+  }
+  .main .project-link {
+    width: 65%;
+    height: 100px;
+    font-size: 35px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .links {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    max-width: 100%;
+    align-items: center;
+  }
+  .main .project-link {
+    width: 80%;
+    height: 100px;
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 25px;
+  }
+  .main a button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .navbar .links > * {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  h1 {
+    font-size: 20px;
+  }
+  .nav .links {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 15px;
+  }
+  .nav .links {
+    font-size: 10px;
+  }
+}
